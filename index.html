@@ -519,11 +519,13 @@
             <div><h4>Response Time</h4><p>Within 24 hours</p></div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/mohammadfadhilah16@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="New project inquiry from your portfolio">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="_honey" style="display:none">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d5e52652-654f-4f84-bbe8-e436a5331526">
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <textarea name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name</label>
