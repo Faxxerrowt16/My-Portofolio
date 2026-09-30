@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alex Carter — Video Editor &amp; Poster Designer. Portfolio of video edits and poster design work.">
+  <title>Muhammad Fadhilah — Video Editor &amp; Poster Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== DOODLE BACKGROUND ===== -->
+  <div class="doodle-layer" id="doodleLayer" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar" class="nav">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Muhammad<span></span>Fadhilah</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#video-work" class="nav-link">Video Work</a></li>
+        <li><a href="#posters" class="nav-link">Posters</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header id="home" class="hero">
+    <div class="hero-bg">
+      <div class="gradient-blob blob-1"></div>
+      <div class="gradient-blob blob-2"></div>
+      <div class="gradient-blob blob-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm Fadhil</p>
+        <h1 class="hero-name">Muhammad<br><span class="gradient-text">Fadhilah</span></h1>
+        <p class="hero-desc">I turn raw footage/movie footage into cool video edits and blank canvases into bold posters. Six years of crafting edits and eye-catching print design for brands, artists and events.</p>
+        <div class="hero-actions">
+          <a href="#video-work" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Watch My Edits
+          </a>
+          <a href="#posters" class="btn btn-secondary">See Poster Designs</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="editor-mock">
+          <div class="editor-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="editor-name">showreel_2026.mp4</span>
+          </div>
+          <div class="editor-preview">
+            <div class="preview-scene"></div>
+            <span class="preview-play" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+            <span class="preview-time">00:12 / 02:14</span>
+          </div>
+          <div class="editor-timeline">
+            <div class="track">
+              <div class="clip" style="width:36%"></div>
+              <div class="clip alt" style="width:24%"></div>
+              <div class="clip" style="width:30%"></div>
+            </div>
+            <div class="track">
+              <div class="clip alt2" style="width:22%"></div>
+              <div class="clip" style="width:46%"></div>
+              <div class="clip alt" style="width:20%"></div>
+            </div>
+            <div class="track">
+              <div class="clip" style="width:52%"></div>
+              <div class="clip alt2" style="width:34%"></div>
+            </div>
+            <div class="playhead"></div>
+          </div>
+        </div>
+        <div class="float-poster">
+          <span class="float-poster-kicker">Poster</span>
+          <span class="float-poster-title">4:5</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><div class="scroll-line"></div></div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">About</p>
+        <h2 class="section-title">A bit About ME!</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-frame">
+            <img src="Profile Picture.jpeg" alt="Profile Picture"  class="about-frame">
+            <span class="about-initials"></span>
+            <div class="about-ring"></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-lead">Hei Everyone, name is Muhammad Fadhilah, or call me Fadhil or maybe Ali. I'm a Mobile video editor and poster designer based in Surabaya, 12 grade at SMK Darma Siswa 1 Sidoarjo.</p>
+          <p>On the editing side I use Alight Motion, Canva, and Capcut. Good at color grading and clean transitions that keep viewers watching. On the design side I build poster layouts with strong typography.</p>
+          <p>I was an Internship at Polygron Group Insera Sena at HRGA Department for 6 Month. And currently at PT. E-T-A Indonesia as IT Intern at IT Department. Talking about experience, i also the one who designed my Class Logo, Instagram Feeds Theme&Design, and all the events going. </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">150+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What I Do!</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon icon-orange">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+          </div>
+          <h3>Video Editing</h3>
+          <p>Promos, reels, short films, and social ads.</p>
+          <div class="service-tags"><span>Alight Motion</span><span>CapCut</span></div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon icon-violet">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          </div>
+          <h3>Poster Design</h3>
+          <p>Event posters, album art, key visuals and print-ready layouts with bold, deliberate typography.</p>
+          <div class="service-tags"><span>Alight Motion</span><span>Canva</span><span>IbisPaintX</span></div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon icon-pink">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 21l2.3-7.2-6-4.4h7.6z"></path></svg>
+          </div>
+          <h3>Motion Graphics</h3>
+          <p>Title cards, lower thirds and looping social media animations.</p>
+          <div class="service-tags"><span>Alight Motion</span><span>IbisPaintX</span></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO WORK ===== -->
+  <section id="video-work" class="section work">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Video Editing</p>
+        <h2 class="section-title">Featured Video Edits</h2>
+        <p class="section-subtitle">A selection of my editing work. Click any thumbnail to play the video.</p>
+      </div>
+
+      <div class="filter-bar" id="videoFilters" role="tablist" aria-label="Filter videos by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Transition">Transition</button>
+        <button class="filter-btn" data-filter="Tiktok Style">Tiktok Style</button>
+        <button class="filter-btn" data-filter="Mixed Media">Mixed Media</button>
+        <button class="filter-btn" data-filter="Motion Graphic">Motion Graphic</button>
+        <button class="filter-btn" data-filter="Flow">Flow</button>
+        <button class="filter-btn" data-filter="jedag jedug">JJ 3D</button>
+        <button class="filter-btn" data-filter="Jugg">Jugg</button>
+      </div>
+
+      <div class="videos-grid" id="videosGrid">
+        <article class="video-card reveal" data-category="Mixed Media">
+          <button class="video-thumb thumb-1"
+            data-video="video_sample.mp4"
+            data-title="Mixed Media"
+            data-desc="This is a video made by just a simle step, printed per-frame, drawn by used crayon and marker, and shoot with Phone Cam"
+            aria-label="Play video: Mixed Media">
+            <span class="thumb-scene"></span>
+            <span class="video-cat">Mixed Media</span>
+            <span class="video-duration">0:36</span>
+            <span class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+          <div class="video-info">
+            <h3>Mixed Media</h3>
+            <p>Manual drawn · Papercut</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal" data-category="Transition">
+          <button class="video-thumb thumb-2"
+            data-video="video_sample 4.mp4"
+            data-title="Scarlet Witch Edit"
+            data-desc="This edit took Big effort for making a transition took shapes, elements etc. I use some of her comic panels and her magic elements for the edit and it paid off."
+            aria-label="Play video: Transition">
+            <span class="thumb-scene"></span>
+            <span class="video-cat">Transition Edit</span>
+            <span class="video-duration">0:27</span>
+            <span class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+          <div class="video-info">
+            <h3>Transition Edit</h3>
+            <p>Alight Motion</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal" data-category="Transition">
+          <button class="video-thumb thumb-3"
+            data-video="video_sample 3.mp4"
+            data-title="Transition Trend"
+            data-desc="Also a Transition Edit, was inspire by Tiktok video, it takes not longer than the other one."
+            aria-label="Play video: Transition">
+            <span class="thumb-scene"></span>
+            <span class="video-cat">Transition Edit</span>
+            <span class="video-duration">0:20</span>
+            <span class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+          <div class="video-info">
+            <h3>Transition Trend Edit</h3>
+            <p>Alight Motion</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal" data-category="Transition">
+          <button class="video-thumb thumb-4"
+            data-video="video_sample 2.mp4"
+            data-title="Jet Boy Low FPS Style"
+            data-desc="Video was edited by using 15 fps and shakes."
+            aria-label="Play video: Low FPS Style Edit">
+            <span class="thumb-scene"></span>
+            <span class="video-cat">Low FPS Edit</span>
+            <span class="video-duration">0:15</span>
+            <span class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+          <div class="video-info">
+            <h3>Low FPS Style Edit</h3>
+            <p>low FPS · Shakes</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal" data-category="Motion Graphic">
+          <button class="video-thumb thumb-5"
+            data-video="video sample/Motion Graphic.mp4"
+            data-title="School Menfess Story Instagram"
+            data-desc="A 24 seconds Motion Graphics video with Mario pixelate theme for class Instagram Story."
+            aria-label="Play video: Class Menfess Story Instagram">
+            <span class="thumb-scene"></span>
+            <span class="video-cat">Motion Graphic</span>
+            <span class="video-duration">0:24</span>
+            <span class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+          <div class="video-info">
+            <h3>Class Menfess Story Instagram</h3>
+            <p>Alight Motion · Canva</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal" data-category="Flow">
+          <button class="video-thumb thumb-6"
+            data-video="Video sample/flow.mp4"
+            data-title="Flow 15 fps"
+            data-desc="A Mini vlog with flow style, using 15 fps, movement transition and lighting manip."
+            aria-label="Play video: Flow 15 fps">
+            <span class="thumb-scene"></span>
+            <span class="video-cat">Flow</span>
+            <span class="video-duration">0:27</span>
+            <span class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+          <div class="video-info">
+            <h3>Flow 15 fps</h3>
+            <p>Alight Motion</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal" data-category="JJ 3D">
+          <button class="video-thumb thumb-7"
+            data-video="Video sample/JJ 3D.mp4"
+            data-title="JJ 3D Sudah Terbiasa Terjadi Tante"
+            data-desc="An Indonesian shake style named 'jedag-jedug' with 3D elements, making the edits way cooler than casual."
+            aria-label="Play video: JJ 3D Sudah Terbiasa Terjadi Tante">
+            <span class="thumb-scene"></span>
+            <span class="video-cat">JJ 3D</span>
+            <span class="video-duration">0:18</span>
+            <span class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+          <div class="video-info">
+            <h3>JJ 3D Sudah Terbiasa Terjadi Tante</h3>
+            <p>Alight Motion</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal" data-category="Transition">
+          <button class="video-thumb thumb-8"
+            data-video="Video sample/Transition 2.mp4"
+            data-title="Birthday Edit"
+            data-desc="Mixed Transition and using bounce shakes. Putting a lot of photos of memories."
+            aria-label="Play video: Transition 2">
+            <span class="thumb-scene"></span>
+            <span class="video-cat">Transition</span>
+            <span class="video-duration">0:19</span>
+            <span class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+          <div class="video-info">
+            <h3>Birthday Edit</h3>
+            <p>Alight Motion · Canva</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal" data-category="Tiktok Style">
+          <button class="video-thumb thumb-10"
+            data-video="Video sample/Diss edit.mp4"
+            data-title="Diss Style"
+            data-desc="From Trend turn into Style edit. using shakes and photo panel with dissing intro."
+            aria-label="Play video: Diss edit">
+            <span class="thumb-scene"></span>
+            <span class="video-cat">Tiktok Style</span>
+            <span class="video-duration">0:20</span>
+            <span class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+          <div class="video-info">
+            <h3>Diss Edit Style</h3>
+            <p>Alight Motion</p>
+          </div>
+        </article>
+
+      </div>
+      <p class="note">Preview clips are sample videos — swap the URLs in <code>index.html</code> with your own edits.</p>
+    </div>
+  </section>
+
+  <!-- ===== POSTERS ===== -->
+  <section id="posters" class="section posters">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Poster Design</p>
+        <h2 class="section-title">Poster Gallery</h2>
+        <p class="section-subtitle">Click any poster to view it full size.</p>
+      </div>
+
+      <div class="filter-bar" id="posterFilters" role="tablist" aria-label="Filter posters by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Promote">Promote</button>
+        <button class="filter-btn" data-filter="Event">Event</button>
+        <button class="filter-btn" data-filter="Personal">Personal</button>
+        <button class="filter-btn" data-filter="Typography">Typography</button>
+        <button class="filter-btn" data-filter="Trend">Trend</button>
+      </div>
+
+      <div class="posters-grid" id="postersGrid">
+        <article class="poster-card reveal" data-category="Trend" data-title="Color abstract" data-desc="Y2K Jean Grey with blue purpleish color.">
+          <div class="poster poster-1">
+            <img src="Poster sample/Graiant.jpeg" alt="poster poster-1" class="poster-card reveal">          
+            <div class="poster-shape"></div>
+            <div class="poster-bottom">
+            </div>
+          </div>
+          <div class="poster-caption">
+            <h4>Cyberpop Collage Art</h4>
+            <p>Character poster</p>
+          </div>
+        </article>
+
+        <article class="poster-card reveal" data-category="Promote" data-title="Paskib Promote" data-desc="Promoting Paskib extracurricular on SMK & SMA Darma Siswa Sidoarjo.">
+          <div class="poster poster-2">
+            <img src="Poster sample/Promo.jpeg">
+            <div class="poster-bottom">
+            </div>
+          </div>
+          <div class="poster-caption">
+            <h4>Paskib Promote</h4>
+            <p>Promote poster</p>
+          </div>
+        </article>
+
+        <article class="poster-card reveal" data-category="Event" data-title="Valentine Menfess" data-desc="A year event where we sent a secret message to someone. A 5-poster series in 9:16 — use the arrows to browse." data-series="Poster sample/Valentine Menfess 1.jpeg,Poster sample/Valentine Menfess 2.jpeg,Poster sample/Valentine Menfess 3.jpeg,Poster sample/Valentine Menfess 4.jpeg,Poster sample/Valentine Menfess 5.jpeg">
+          <div class="poster poster-3">
+            <img src="Poster sample/Menfess.jpeg">
+            <div class="poster-bottom">
+            </div>
+          </div>
+          <div class="poster-caption">
+            <h4>Valentine Menfess</h4>
+            <p>Event series</p>
+          </div>
+        </article>
+
+        <article class="poster-card reveal" data-category="Promote" data-title="Teammate" data-desc="Usually for those who wants to make a poster for contest.">
+          <div class="poster poster-4">
+            <img src="Poster sample/Team.jpeg">
+            <div class="poster-shape"></div>
+            <div class="poster-bottom">
+            </div>
+          </div>
+          <div class="poster-caption">
+            <h4>Teammate</h4>
+            <p>Team poster</p>
+          </div>
+        </article>
+
+        <article class="poster-card reveal" data-category="Event" data-title="Eid-Fitr Greetings" data-desc="Poster Greetings Eid-Fitr 2026.">
+          <div class="poster poster-5">
+            <img src="Poster sample/Congrats 2.jpeg">
+            <div class="poster-bottom">
+            </div>
+          </div>
+          <div class="poster-caption">
+            <h4>Eid-Fitr Greetings</h4>
+            <p>Greeting poster</p>
+          </div>
+        </article>
+
+        <article class="poster-card reveal" data-category="Event" data-title="Education Day Greetings" data-desc="Greetings to Education.">
+          <div class="poster poster-6">
+            <img src="Poster sample/Pixelate congrats.jpeg" style="object-fit: cover; object-position: 100% 30%;">
+            <div class="poster-bottom">
+            </div>
+          </div>
+          <div class="poster-caption">
+            <h4>Greeting National Education Day</h4>
+            <p>Greeting poster</p>
+          </div>
+        </article>
+
+        <article class="poster-card reveal" data-category="Event" data-category="Personal" data-title="Anniversary Wishes" data-desc="Wishing your friend for their birthday.">
+          <div class="poster poster-7">
+            <img src="Poster sample/Anniversary wishes.jpeg" style="object-fit: cover; object-position: 100% 45%;">
+            <div class="poster-bottom">
+            </div>
+          </div>
+          <div class="poster-caption">
+            <h4>Anniversary wishes</h4>
+            <p>Wishes poster</p>
+          </div>
+        </article>
+
+        <article class="poster-card reveal" data-category="Personal" data-category="Promote" data-title="Luna Snow 2099" data-desc="A Marvel Rivals Character with 2099 album skin.">
+          <div class="poster poster-8">
+            <img src="Poster sample/Character skin.jpeg">
+            <div class="poster-bottom">
+            </div>
+          </div>
+          <div class="poster-caption">
+            <h4>Luna Snow 2099 Poster</h4>
+            <p>Character poster</p>
+          </div>
+        </article>
+
+        <article class="poster-card reveal" data-category="Trend" data-title="A Little Bit About Me" data-desc="A Tiktok Trend about someone.">
+          <div class="poster poster-9">
+            <img src="Poster sample/Trend.jpeg">
+            <div class="poster-bottom">
+            </div>
+          </div>
+          <div class="poster-caption">
+            <h4>A Little bit about me</h4>
+            <p>Trend poster</p>
+          </div>
+        </article>
+
+        <article class="poster-card reveal" data-category="Trend" data-title="Papercut Layout" data-desc="A papercut style like scrapbook page.">
+          <div class="poster poster-10">
+            <img src="Poster sample/Papercut.jpeg">
+            <div class="poster-bottom">
+            </div>
+          </div>
+          <div class="poster-caption">
+            <h4>Papercut Layout</h4>
+            <p>Papercut poster</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Let's create something</h2>
+        <p class="section-subtitle">Have a video to edit or a poster to design? Tell me about your project.</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon icon-orange">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div><h4>Email</h4><p>mohammadfadhilah16@gmail.com</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon icon-violet">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div><h4>Location</h4><p>Surabaya, Indonesia</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon icon-pink">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div><h4>Response Time</h4><p>Within 24 hours</p></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Project Type</label>
+            <input type="text" id="subject" name="subject" placeholder="Video edit, poster design, both..." required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="YouTube">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Instagram">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Behance">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.572.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.736 1.883h3.02zm-7.846-5.004h4.301c-.105-1.537-1.51-1.93-2.25-1.93-1. 0-1.9.55-2.05 1.93zM8.5 12H4v4h4.432c1.476-.04 2.182-.772 2.182-2.032 0-1.3-.876-1.968-2.114-1.968zM4 5v4h3.5c1.2 0 2-.6 2-2.1 0-1.2-.8-1.9-2-1.9H4z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Vimeo">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.372-8.29 6.372-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197c1.185-1.044 2.351-2.084 3.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.455-5.757 6.808-5.664 2.479.07 3.649 1.683 3.514 4.838l-.079.014z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Muhammad Fadhilah — Video Editor &amp; Poster Designer</p>
+      <p>Built with passion, pixels &amp; patience.</p>
+    </div>
+  </footer>
+
+  <!-- ===== VIDEO MODAL ===== -->
+  <div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-close aria-label="Close video">&times;</button>
+      <div class="video-wrapper">
+        <video id="modalVideo" controls playsinline></video>
+      </div>
+      <div class="modal-info">
+        <h3 id="modalTitle">Video title</h3>
+        <p id="modalDesc">Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== POSTER LIGHTBOX ===== -->
+  <div class="modal" id="posterModal" role="dialog" aria-modal="true" aria-labelledby="posterModalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content modal-content--poster">
+      <button class="modal-close" data-close aria-label="Close poster">&times;</button>
+      <div class="poster-stage" id="posterStage"></div>
+
+      <div class="carousel" id="posterCarousel" hidden>
+        <div class="car-viewport">
+          <div class="car-track" id="carTrack"></div>
+        </div>
+        <button class="car-btn car-prev" id="carPrev" aria-label="Previous poster">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="car-btn car-next" id="carNext" aria-label="Next poster">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+        <div class="car-dots" id="carDots"></div>
+      </div>
+
+      <div class="modal-info modal-info--poster">
+        <h3 id="posterModalTitle">Poster title</h3>
+        <p id="posterModalDesc">Description</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
