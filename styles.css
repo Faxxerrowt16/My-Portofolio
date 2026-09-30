@@ -441,6 +441,7 @@ img.about-frame { object-fit: cover; }
 .thumb-5  { background-image: url('thumbnail 5.jpg') ;
            background-size: cover;
            background-position: center;
+           object-fit: cover;
           }
   
 .thumb-5 .thumb-scene::before { background: radial-gradient(circle at 35% 35%, #bbf7d0, #22c55e); }
