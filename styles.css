@@ -499,6 +499,10 @@ img.about-frame { object-fit: cover; }
 
 /* ==================== POSTERS ==================== */
 .posters-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 26px; }
+#championsGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1020px; margin-left: auto; margin-right: auto;
+}
 .poster-card { cursor: pointer; transition: transform var(--transition); }
 .poster-card.hide { display: none; }
 .poster-card:hover { transform: translateY(-6px) rotate(0.6deg); }
@@ -1048,6 +1052,7 @@ img.about-frame { object-fit: cover; }
   .about-stats { grid-template-columns: 1fr; }
   .videos-grid { grid-template-columns: 1fr; }
   .posters-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  #championsGrid { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
   .poster { padding: 14px; }
   .poster-title { font-size: 24px; }
   .modal-info { padding: 18px; }
