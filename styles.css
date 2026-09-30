@@ -1005,7 +1005,13 @@ img.about-frame { object-fit: cover; }
   .nav-links.open { transform: translateY(0); }
   .nav-links li { border-bottom: 1.5px dashed rgba(51, 47, 42, 0.18); }
   .nav-links li:last-child { border-bottom: none; }
-  .nav-link { display: block; padding: 14px 2px; font-size: 18px; }
+  .nav-link { display: block; padding: 14px 2px 14px 16px; font-size: 18px; }
+  .nav-link::after {
+    left: 0; right: auto; bottom: auto; top: 50%;
+    width: 6px; height: 22px; border-radius: 3px;
+    transform: translateY(-50%);
+  }
+  .nav-link:hover::after, .nav-link.active::after { transform: translateY(-50%) scaleY(1.15); }
   .hamburger { display: flex; }
   .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
   .hamburger.active span:nth-child(2) { opacity: 0; }
