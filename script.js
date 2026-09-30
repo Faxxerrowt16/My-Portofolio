@@ -318,45 +318,53 @@
 
   /* ==================== CONTACT FORM ==================== */
   if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var btn = contactForm.querySelector('button[type="submit"]');
-      var originalText = btn.textContent;
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = contactForm.querySelector('button[type="submit"]');
+    var originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
 
-      fetch(contactForm.action, {
-        method: 'POST',
-        headers: { Accept: 'application/json' },
-        body: new FormData(contactForm)
+    // Convert standard action URL to AJAX endpoint if it isn't already
+    var targetUrl = contactForm.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+
+    fetch(targetUrl, {
+      method: 'POST',
+      headers: { 
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      // Convert FormData to JSON object for maximum FormSubmit AJAX reliability
+      body: JSON.stringify(Object.fromEntries(new FormData(contactForm)))
+    })
+      .then(function (response) {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.json();
       })
-        .then(function (response) {
-          if (!response.ok) throw new Error('Network response was not ok');
-          return response.json();
-        })
-        .then(function () {
-          btn.textContent = 'Message Sent!';
-          btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
-          btn.style.boxShadow = '0 4px 14px rgba(34, 197, 94, 0.4)';
-          setTimeout(function () {
-            btn.textContent = originalText;
-            btn.style.background = '';
-            btn.style.boxShadow = '';
-            btn.disabled = false;
-            contactForm.reset();
-          }, 3000);
-        })
-        .catch(function () {
-          btn.textContent = 'Failed - try again';
-          btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
-          setTimeout(function () {
-            btn.textContent = originalText;
-            btn.style.background = '';
-            btn.disabled = false;
-          }, 3000);
-        });
-    });
-  }
+      .then(function (data) {
+        btn.textContent = 'Message Sent!';
+        btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+        btn.style.boxShadow = '0 4px 14px rgba(34, 197, 94, 0.4)';
+        setTimeout(function () {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.style.boxShadow = '';
+          btn.disabled = false;
+          contactForm.reset();
+        }, 3000);
+      })
+      .catch(function (error) {
+        console.error('Form Error:', error);
+        btn.textContent = 'Failed - try again';
+        btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+        setTimeout(function () {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
+      });
+  });
+}
 
   /* ==================== DOODLE BACKGROUND ==================== */
   var doodleLayer = document.getElementById('doodleLayer');
