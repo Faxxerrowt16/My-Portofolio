@@ -181,9 +181,10 @@ button { font-family: var(--font);
 .nav-logo {
   font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--ink);
   display: inline-flex; align-items: center; gap: 4px;
+  white-space: nowrap; flex-shrink: 0;
 }
 .nav-logo span { color: var(--coral); font-size: 34px; line-height: 0.5; }
-.nav-links { display: flex; gap: 30px; }
+.nav-links { display: flex; gap: 30px; list-style: none; }
 .nav-link {
   font-size: 16px; color: var(--muted); position: relative; padding: 2px 4px;
   transition: color var(--transition), background var(--transition);
@@ -197,6 +198,7 @@ button { font-family: var(--font);
 .nav-link:hover::after, .nav-link.active::after { transform: rotate(1.5deg) scaleY(1.25); }
 .hamburger {
   display: none; flex-direction: column; gap: 5px; background: none; border: none; padding: 4px;
+  flex-shrink: 0; cursor: pointer;
 }
 .hamburger span {
   display: block; width: 26px; height: 3px; background: var(--ink);
@@ -988,15 +990,22 @@ img.about-frame { object-fit: cover; }
   .contact-wrapper { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
+  .nav-container { height: 64px; padding: 0 18px; }
+  .nav-logo { font-size: 23px; }
+  .nav-logo span { font-size: 28px; }
   .nav-links {
-    position: fixed; top: 72px; left: 0; right: 0;
+    position: fixed; top: 64px; left: 0; right: 0;
     background: rgba(246, 239, 220, 0.97); backdrop-filter: blur(14px);
-    flex-direction: column; padding: 20px 24px; gap: 0;
+    flex-direction: column; padding: 8px 18px 16px; gap: 0;
     border-bottom: 2.5px solid var(--ink); transform: translateY(-130%);
     transition: transform var(--transition);
+    box-shadow: 0 12px 24px rgba(51, 47, 42, 0.14);
+    max-height: calc(100vh - 64px); overflow-y: auto;
   }
   .nav-links.open { transform: translateY(0); }
-  .nav-link { display: block; padding: 12px 0; font-size: 18px; }
+  .nav-links li { border-bottom: 1.5px dashed rgba(51, 47, 42, 0.18); }
+  .nav-links li:last-child { border-bottom: none; }
+  .nav-link { display: block; padding: 14px 2px; font-size: 18px; }
   .hamburger { display: flex; }
   .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
   .hamburger.active span:nth-child(2) { opacity: 0; }

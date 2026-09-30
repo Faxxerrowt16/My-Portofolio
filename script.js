@@ -24,16 +24,23 @@
   var lastFocused = null;
 
   /* ==================== MOBILE NAV ==================== */
+  function syncAria() {
+    var open = navLinks.classList.contains('open');
+    hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
   function toggleMobileMenu() {
     hamburger.classList.toggle('active');
     navLinks.classList.toggle('open');
+    syncAria();
   }
   function closeMobileMenu() {
     hamburger.classList.remove('active');
     navLinks.classList.remove('open');
+    syncAria();
   }
   if (hamburger) hamburger.addEventListener('click', toggleMobileMenu);
   navItems.forEach(function (item) { item.addEventListener('click', closeMobileMenu); });
+  window.addEventListener('resize', function () { if (window.innerWidth > 768) closeMobileMenu(); });
 
   /* ==================== SCROLL EFFECTS ==================== */
   function handleScroll() {
