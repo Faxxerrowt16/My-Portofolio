@@ -438,32 +438,32 @@ img.about-frame { object-fit: cover; }
           }
 .thumb-4 .thumb-scene::before { background: radial-gradient(circle at 35% 35%, #fbcfe8, #ec4899); }
 
-.thumb-5  { background-image: url('thumbnail 5.jpg') ;
+.thumb-5  { background-image: url('Thumbnail 5.jpg') ;
            background-size: cover;
            background-position: center;
           }
   
 .thumb-5 .thumb-scene::before { background: radial-gradient(circle at 35% 35%, #bbf7d0, #22c55e); }
 
-.thumb-6 { background-image: url('thumbnail 7.jpg') ;
+.thumb-6 { background-image: url('Thumbnail 7.jpg') ;
            background-size: cover;
            background-position: center; 
           }
 .thumb-6 .thumb-scene::before { background: radial-gradient(circle at 35% 35%, #e5e7eb, #9ca3af); }
 
-.thumb-7 { background-image: url('thumbnail 8.jpg') ;
+.thumb-7 { background-image: url('Thumbnail 8.jpg') ;
            background-size: cover;
            background-position: center; 
           }
 .thumb-7 .thumb-scene::before { background: radial-gradient(circle at 35% 35%, #ddd6fe, #7c3aed); }
 
-.thumb-8 { background-image: url('thumbnail 9.jpg') ;
+.thumb-8 { background-image: url('Thumbnail 9.jpg') ;
            background-size: cover;
            background-position: center;
          }
 .thumb-10 .thumb-scene::before { background: radial-gradient(circle at 35% 35%, #bae6fd, #0ea5e9); }
 
-.thumb-10 { background-image: url('thumbnail 10.jpg') ;
+.thumb-10 { background-image: url('Thumbnail 10.jpg') ;
            background-size: cover;
            background-position: center;
          }
