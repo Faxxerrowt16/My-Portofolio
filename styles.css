@@ -824,6 +824,22 @@ img.about-frame { object-fit: cover; }
   transform: perspective(110px) rotateX(62deg); transform-origin: bottom;
 }
 
+/* --- champion series (gold on dark) --- */
+.poster-11 { background: linear-gradient(160deg, #4c3a00 0%, #2a1d00 60%, #14100a 100%); color: #ffe9a8; }
+.poster-11 .poster-kicker { color: #f5c542; }
+.poster-11 .poster-title { color: #fff; text-shadow: 0 0 18px rgba(245, 197, 66, 0.85); }
+.poster-11 .poster-sub { color: #d9b95f; }
+
+.poster-12 { background: linear-gradient(150deg, #3d2c00 0%, #1e1505 70%); color: #ffe9a8; }
+.poster-12 .poster-kicker { color: #ffcf5e; }
+.poster-12 .poster-title { color: #fff; text-shadow: 0 2px 14px rgba(245, 197, 66, 0.6); }
+.poster-12 .poster-sub { color: #d9b95f; }
+
+.poster-13 { background: linear-gradient(165deg, #5c4407 0%, #2b2003 62%, #120d05 100%); color: #ffe9a8; }
+.poster-13 .poster-kicker { color: #f5c542; }
+.poster-13 .poster-title { color: #fff; text-shadow: 0 0 16px rgba(255, 207, 94, 0.8); }
+.poster-13 .poster-sub { color: #d9b95f; }
+
 /* ==================== MODALS ==================== */
 .modal {
   position: fixed; inset: 0; z-index: 2000; display: flex;
