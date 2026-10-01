@@ -529,7 +529,7 @@ img.about-frame { object-fit: cover; }
 .poster-caption h4 { font-size: 20px; margin-bottom: 0; }
 .poster-caption p { font-size: 13.5px; color: var(--muted-2); }
 
-/* --- poster 1: neon nights --- */
+/* --- poster 1 --- */
 .poster-1 { background: linear-gradient(165deg, #2b1050 0%, #0d011c 72%); color: #f3d9ff; }
 .poster-1 .poster-kicker { color: #e879f9; }
 .poster-1 .poster-title { color: #fff; text-shadow: 0 0 20px rgba(232, 121, 249, 0.85); }
@@ -591,7 +591,7 @@ img.about-frame { object-fit: cover; }
   transform: perspective(120px) rotateX(64deg); transform-origin: bottom;
 }
 
-/* --- poster 2: summer fest --- */
+/* --- poster 2 --- */
 .poster-2 { background: linear-gradient(180deg, #fdba74 0%, #fb7185 48%, #f43f5e 100%); color: #fff8f0; }
 .poster-2 .poster-kicker { color: rgba(255, 255, 255, 0.9); }
 .poster-2 .poster-title { color: #fff; text-shadow: 0 2px 12px rgba(120, 20, 40, 0.35); }
@@ -644,7 +644,7 @@ img.about-frame { object-fit: cover; }
   background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.28) 0 2px, transparent 2px 14px);
 }
 
-/* --- poster 3: grand opening --- */
+/* --- poster 3 --- */
 .poster-3 { background: linear-gradient(160deg, #1a1a21, #08080c); color: #fbbf24; }
 .poster-3 .poster-kicker { color: #a1a1aa; }
 .poster-3 .poster-title { color: #fbbf24; }
@@ -660,7 +660,7 @@ img.about-frame { object-fit: cover; }
   content: ''; position: absolute; inset: 18px; border: 0px solid rgba(251, 191, 36, 0.25); z-index: 1;
 }
 
-/* --- poster 4: cyber city --- */
+/* --- poster 4 --- */
 .poster-4 { background: linear-gradient(160deg, #020617, #0b1227 60%, #111827); color: #e0f2fe; }
 .poster-4 .poster-kicker { color: #22d3ee; }
 .poster-4 .poster-title { color: #fff; text-shadow: 3px 3px 0 #2f5bd6, -3px -3px 0 #0e9bb8; }
@@ -688,7 +688,7 @@ img.about-frame { object-fit: cover; }
   transform: perspective(110px) rotateX(62deg); transform-origin: bottom;
 }
 
-/* --- poster 5: less is more --- */
+/* --- poster 5 --- */
 .poster-5 { background: #efece4; color: #141414; }
 .poster-5 .poster-kicker { color: #9ca3af; }
 .poster-5 .poster-title { font-size: clamp(32px, 4.2vw, 48px); }
@@ -711,7 +711,7 @@ img.about-frame { object-fit: cover; }
   background: #141414; z-index: 1;
 }
 
-/* --- poster 6: monochrome --- */
+/* --- poster 6 --- */
 .poster-6 { background: linear-gradient(150deg, #3f3f46, #09090b); color: #fafafa; }
 .poster-6 .poster-kicker { color: #a1a1aa; }
 .poster-6 .poster-title { color: #fff; }
@@ -737,7 +737,7 @@ img.about-frame { object-fit: cover; }
   opacity: 0;
 }
 
-/* --- poster 7: bold statement --- */
+/* --- poster 7 --- */
 .poster-7 { background: #2f5bd6; color: #fff; }
 .poster-7 .poster-kicker { color: rgba(255, 255, 255, 0.85); }
 .poster-7 .poster-title { font-size: clamp(30px, 4.1vw, 46px); text-transform: uppercase; }
@@ -762,7 +762,7 @@ img.about-frame { object-fit: cover; }
   background: #fff; z-index: 1;
 }
 
-/* --- poster 8: color flow --- */
+/* --- poster 8 --- */
 .poster-8 {
   color: #fff;
   background:
@@ -791,7 +791,7 @@ img.about-frame { object-fit: cover; }
   background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.18), transparent 55%);
 }
 
-/* --- poster 9: green escape --- */
+/* --- poster 9 --- */
 .poster-9 { background: linear-gradient(160deg, #0f9388, #063a34 72%); color: #d1fae5; }
 .poster-9 .poster-kicker { color: #6ee7b7; }
 .poster-9 .poster-title { color: #fff; }
@@ -807,7 +807,7 @@ img.about-frame { object-fit: cover; }
   50% { border-radius: 54% 46% 48% 52% / 46% 54% 46% 54%; transform: rotate(8deg); }
 }
 
-/* --- poster 10: retro wave --- */
+/* --- poster 10 --- */
 .poster-10 { background: linear-gradient(180deg, #1e1a3c 0%, #3b2a6e 42%, #5b4ba8 74%, #2f5bd6 100%); color: #fff; }
 .poster-10 .poster-kicker { color: #c7d2fe; }
 .poster-10 .poster-title { color: #fff; text-shadow: 0 0 16px rgba(47, 91, 214, 0.85); }
@@ -826,6 +826,115 @@ img.about-frame { object-fit: cover; }
     repeating-linear-gradient(0deg, rgba(14, 155, 184, 0.4) 0 1px, transparent 1px 16px);
   transform: perspective(110px) rotateX(62deg); transform-origin: bottom;
 }
+
+/* --- poster 11 --- */
+.poster-14 { background: #2f5bd6; color: #fff; }
+.poster-14.poster-kicker { color: rgba(255, 255, 255, 0.85); }
+.poster-14 .poster-title { font-size: clamp(30px, 4.1vw, 46px); text-transform: uppercase; }
+.poster-14 .poster-sub { color: rgba(255, 255, 255, 0.9); }
+.poster-14 .poster-shape {
+  display: block; left: 18px; bottom: 26%; width: 66px; height: 66px;
+  background: #fff; border-radius: 50%;
+}
+
+#posterStage .poster-14,
+#posterModal .poster-14 {
+  aspect-ratio: 4 / 5 !important;
+  width: 100% !important;
+  max-width: 350px !important; /* Adjust overall popup poster size if needed */
+  margin: 0 auto !important;
+  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
+}
+
+#posterStage .poster-14 img,
+#posterModal .poster-14 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* --- poster 12 --- */
+.poster-15 { background: #2f5bd6; color: #fff; }
+.poster-15 .poster-kicker { color: rgba(255, 255, 255, 0.85); }
+.poster-15 .poster-title { font-size: clamp(30px, 4.1vw, 46px); text-transform: uppercase; }
+.poster-15 .poster-sub { color: rgba(255, 255, 255, 0.9); }
+.poster-15 .poster-shape {
+  display: block; left: 18px; bottom: 26%; width: 66px; height: 66px;
+  background: #fff; border-radius: 50%;
+}
+
+#posterStage .poster-15,
+#posterModal .poster-15 {
+  aspect-ratio: 4 / 5 !important;
+  width: 100% !important;
+  max-width: 350px !important; /* Adjust overall popup poster size if needed */
+  margin: 0 auto !important;
+  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
+}
+
+#posterStage .poster-15 img,
+#posterModal .poster-15 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* --- poster 13 --- */
+#posterStage .poster-16,
+#posterModal .poster-16 {
+  aspect-ratio: 4 / 5 !important;
+  width: 100% !important;
+  max-width: 350px !important; /* Adjust overall popup poster size if needed */
+  margin: 0 auto !important;
+  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
+}
+
+.poster-16 { background: #2f5bd6; color: #fff; }
+.poster-16 .poster-kicker { color: rgba(255, 255, 255, 0.85); }
+.poster-16 .poster-title { font-size: clamp(30px, 4.1vw, 46px); text-transform: uppercase; }
+.poster-16 .poster-sub { color: rgba(255, 255, 255, 0.9); }
+.poster-16 .poster-shape {
+  display: block; left: 18px; bottom: 26%; width: 66px; height: 66px;
+  background: #fff; border-radius: 50%;
+}
+
+#posterStage .poster-16 img,
+#posterModal .poster-16 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* --- poster 14 --- */
+.poster-17 { background: #2f5bd6; color: #fff; }
+.poster-17 .poster-kicker { color: rgba(255, 255, 255, 0.85); }
+.poster-17 .poster-title { font-size: clamp(30px, 4.1vw, 46px); text-transform: uppercase; }
+.poster-17 .poster-sub { color: rgba(255, 255, 255, 0.9); }
+.poster-17 .poster-shape {
+  display: block; left: 18px; bottom: 26%; width: 66px; height: 66px;
+  background: #fff; border-radius: 50%;
+}
+
+#posterStage .poster-17,
+#posterModal .poster-17 {
+  aspect-ratio: 4 / 5 !important;
+  width: 100% !important;
+  max-width: 350px !important; /* Adjust overall popup poster size if needed */
+  margin: 0 auto !important;
+  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
+}
+
+#posterStage .poster-17 img,
+#posterModal .poster-17 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
 
 /* --- champion series (gold on dark) --- */
 .poster-11 { background: linear-gradient(160deg, #4c3a00 0%, #2a1d00 60%, #14100a 100%); 
@@ -876,74 +985,6 @@ img.about-frame { object-fit: cover; }
   max-width: 350px !important; /* Adjust overall popup poster size if needed */
   margin: 0 auto !important;
   padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
-}
-
-#posterStage .poster-14,
-#posterModal .poster-14 {
-  aspect-ratio: 4 / 5 !important;
-  width: 100% !important;
-  max-width: 350px !important; /* Adjust overall popup poster size if needed */
-  margin: 0 auto !important;
-  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
-}
-
-#posterStage .poster-14 img,
-#posterModal .poster-14 img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-}
-
-#posterStage .poster-15,
-#posterModal .poster-15 {
-  aspect-ratio: 4 / 5 !important;
-  width: 100% !important;
-  max-width: 350px !important; /* Adjust overall popup poster size if needed */
-  margin: 0 auto !important;
-  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
-}
-
-#posterStage .poster-15 img,
-#posterModal .poster-15 img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-}
-
-#posterStage .poster-16,
-#posterModal .poster-16 {
-  aspect-ratio: 4 / 5 !important;
-  width: 100% !important;
-  max-width: 350px !important; /* Adjust overall popup poster size if needed */
-  margin: 0 auto !important;
-  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
-}
-
-#posterStage .poster-16 img,
-#posterModal .poster-16 img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-}
-
-#posterStage .poster-17,
-#posterModal .poster-17 {
-  aspect-ratio: 4 / 5 !important;
-  width: 100% !important;
-  max-width: 350px !important; /* Adjust overall popup poster size if needed */
-  margin: 0 auto !important;
-  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
-}
-
-#posterStage .poster-17 img,
-#posterModal .poster-17 img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
 }
 
 .poster-2::after {
