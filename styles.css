@@ -836,6 +836,15 @@ img.about-frame { object-fit: cover; }
 .poster-11 .poster-title { color: #fff; text-shadow: 0 0 18px rgba(245, 197, 66, 0.85); }
 .poster-11 .poster-sub { color: #d9b95f; }
 
+#posterStage .poster-11,
+#posterModal .poster-11 {
+  aspect-ratio: 4 / 5 !important;
+  width: 100% !important;
+  max-width: 350px !important; /* Adjust overall popup poster size if needed */
+  margin: 0 auto !important;
+  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
+}
+
 .poster-12 { background: linear-gradient(150deg, #3d2c00 0%, #1e1505 70%); 
              color: #ffe9a8;
              object-fit: cover; 
@@ -844,6 +853,15 @@ img.about-frame { object-fit: cover; }
 .poster-12 .poster-title { color: #fff; text-shadow: 0 2px 14px rgba(245, 197, 66, 0.6); }
 .poster-12 .poster-sub { color: #d9b95f; }
 
+#posterStage .poster-2,
+#posterModal .poster-2 {
+  aspect-ratio: 4 / 5 !important;
+  width: 100% !important;
+  max-width: 350px !important; /* Adjust overall popup poster size if needed */
+  margin: 0 auto !important;
+  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
+}
+
 .poster-13 { background: linear-gradient(165deg, #5c4407 0%, #2b2003 62%, #120d05 100%);
              color: #ffe9a8; 
              object-fit: cover;
@@ -851,6 +869,15 @@ img.about-frame { object-fit: cover; }
 .poster-13 .poster-kicker { color: #f5c542; }
 .poster-13 .poster-title { color: #fff; text-shadow: 0 0 16px rgba(255, 207, 94, 0.8); }
 .poster-13 .poster-sub { color: #d9b95f; }
+
+#posterStage .poster-2,
+#posterModal .poster-2 {
+  aspect-ratio: 4 / 5 !important;
+  width: 100% !important;
+  max-width: 350px !important; /* Adjust overall popup poster size if needed */
+  margin: 0 auto !important;
+  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
+}
 
 /* ==================== MODALS ==================== */
 .modal {
