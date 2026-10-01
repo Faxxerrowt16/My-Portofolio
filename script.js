@@ -109,7 +109,8 @@
         bar.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
         grid.querySelectorAll('[data-category]').forEach(function (card) {
-          var show = filter === 'all' || card.getAttribute('data-category') === filter;
+          var cats = (card.getAttribute('data-category') || '').split(',').map(function (c) { return c.trim(); });
+          var show = filter === 'all' || cats.indexOf(filter) !== -1;
           card.classList.toggle('hide', !show);
         });
       });
