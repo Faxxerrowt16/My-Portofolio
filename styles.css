@@ -878,6 +878,79 @@ img.about-frame { object-fit: cover; }
   padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
 }
 
+#posterStage .poster-14,
+#posterModal .poster-14 {
+  aspect-ratio: 4 / 5 !important;
+  width: 100% !important;
+  max-width: 350px !important; /* Adjust overall popup poster size if needed */
+  margin: 0 auto !important;
+  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
+}
+
+#posterStage .poster-14 img,
+#posterModal .poster-14 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+#posterStage .poster-15,
+#posterModal .poster-15 {
+  aspect-ratio: 4 / 5 !important;
+  width: 100% !important;
+  max-width: 350px !important; /* Adjust overall popup poster size if needed */
+  margin: 0 auto !important;
+  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
+}
+
+#posterStage .poster-15 img,
+#posterModal .poster-15 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+#posterStage .poster-16,
+#posterModal .poster-16 {
+  aspect-ratio: 4 / 5 !important;
+  width: 100% !important;
+  max-width: 350px !important; /* Adjust overall popup poster size if needed */
+  margin: 0 auto !important;
+  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
+}
+
+#posterStage .poster-16 img,
+#posterModal .poster-16 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+#posterStage .poster-17,
+#posterModal .poster-17 {
+  aspect-ratio: 4 / 5 !important;
+  width: 100% !important;
+  max-width: 350px !important; /* Adjust overall popup poster size if needed */
+  margin: 0 auto !important;
+  padding: 0 !important; /* Removes padding so image fills to the dark frame edges */
+}
+
+#posterStage .poster-17 img,
+#posterModal .poster-17 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.poster-2::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 30%; z-index: 1;
+  background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.28) 0 2px, transparent 2px 14px);
+}
+
 /* ==================== MODALS ==================== */
 .modal {
   position: fixed; inset: 0; z-index: 2000; display: flex;
