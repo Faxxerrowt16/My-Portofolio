@@ -579,7 +579,6 @@ img.about-frame { object-fit: cover; }
   width: 100% !important;
   max-width: 500px; /* Adjust max width as desired */
   aspect-ratio: 1 / 1 !important;
-  object-fit: contain !important; /* Crops cleanly to fill 1:1 */
   display: block;
   margin: 0 auto;
 }
