@@ -144,6 +144,15 @@ button { font-family: var(--font);
   65% { transform: rotate(-6deg) scale(1.08); }
   85% { transform: rotate(4deg) scale(1.04); }
 }
+
+/* Preserves translateY(-50%) centering for absolutely-positioned buttons */
+@keyframes wiggle-center {
+  0%, 100% { transform: translateY(-50%) rotate(0deg) scale(1); }
+  20% { transform: translateY(-50%) rotate(-11deg) scale(1.12); }
+  45% { transform: translateY(-50%) rotate(9deg) scale(1.12); }
+  65% { transform: translateY(-50%) rotate(-6deg) scale(1.08); }
+  85% { transform: translateY(-50%) rotate(4deg) scale(1.04); }
+}
 @keyframes bob {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
@@ -1139,7 +1148,7 @@ img.about-frame { object-fit: cover; }
   display: flex; align-items: center; justify-content: center;
   transition: all var(--transition);
 }
-.car-btn:hover { background: var(--yellow); animation: wiggle 0.5s ease; }
+.car-btn:hover { background: var(--yellow); animation: wiggle-center 0.5s ease; }
 .car-btn:active { transform: translateY(-50%) scale(0.94); }
 .car-btn:disabled { opacity: 0.3; cursor: default; animation: none; }
 .car-prev { left: 10px; }
@@ -1186,6 +1195,33 @@ img.about-frame { object-fit: cover; }
 .form-group input:focus, .form-group textarea:focus {
   outline: none; box-shadow: 3px 3px 0 rgba(77, 139, 255, 0.5);
 }
+
+/* --- drop zone --- */
+.drop-zone {
+  border: 2.5px dashed rgba(51, 47, 42, 0.45); border-radius: 14px 5px 16px 5px;
+  background: var(--card-2); padding: 24px 18px; text-align: center; cursor: pointer;
+  transition: border-color var(--transition), background var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+.drop-zone:hover { border-color: var(--blue); transform: translateY(-2px); }
+.drop-zone:focus { outline: none; box-shadow: 3px 3px 0 rgba(77, 139, 255, 0.5); }
+.drop-zone.dragover {
+  border-color: var(--teal); background: rgba(47, 191, 155, 0.12);
+  box-shadow: inset 0 0 0 2px rgba(47, 191, 155, 0.35);
+}
+.drop-zone svg { color: var(--muted); transition: color var(--transition), transform var(--transition); }
+.drop-zone:hover svg, .drop-zone.dragover svg { color: var(--blue); transform: translateY(-3px); }
+.drop-text { font-size: 15px; color: var(--ink); margin: 8px 0 2px; }
+.drop-text span { color: var(--blue); text-decoration: underline; text-decoration-style: dotted; }
+.drop-hint { font-size: 12.5px; color: var(--muted-2); margin: 0; }
+.file-list { list-style: none; margin: 12px 0 0; padding: 0; text-align: left; display: flex; flex-direction: column; gap: 6px; }
+.file-list:empty { display: none; }
+.file-list li {
+  font-size: 13px; color: var(--ink); background: var(--card);
+  border: 2px solid rgba(51, 47, 42, 0.25); border-radius: 10px 4px 12px 4px;
+  padding: 7px 10px; display: flex; align-items: center; gap: 8px; word-break: break-all;
+}
+.file-list li::before { content: '\1F4CE'; flex-shrink: 0; }
+.file-list .file-size { color: var(--muted-2); margin-left: auto; white-space: nowrap; flex-shrink: 0; }
 .social-links { display: flex; justify-content: center; gap: 14px; }
 .social-link {
   width: 48px; height: 48px; border-radius: 50% 10px 50% 12px; border: 2.5px solid var(--ink);

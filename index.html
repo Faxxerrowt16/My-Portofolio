@@ -46,7 +46,7 @@
       <div class="hero-text">
         <p class="hero-greeting">Hi, I'm Fadhil</p>
         <h1 class="hero-name">Muhammad<br><span class="gradient-text">Fadhilah</span></h1>
-        <p class="hero-desc">I turn raw footage/movie footage into cool video edits and blank canvases into bold posters. Six years of crafting edits and eye-catching print design for brands, artists and events.</p>
+        <p class="hero-desc">jha/movie footage into cool video edits and blank canvases into bold posters. Six years of crafting edits and eye-catching print design for brands, artists and events.</p>
         <div class="hero-actions">
           <a href="#video-work" class="btn btn-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
@@ -395,10 +395,10 @@
 
         <article class="video-card reveal" data-category="Jugg">
             <button class="video-thumb thumb-14"
-            data-video="Jugg.mp4"
+            data-video="Jugg_2.mp4"
             data-title="Jean Grey Gala"
             data-desc="Jean Grey from Marvel Rivals with Hellfire Gala suit 2022."
-            aria-label="Play video: Jugg">
+            aria-label="Play video: Jugg_2">
             <span class="thumb-scene"></span>
             <span class="video-cat">Jugg</span>
             <span class="video-duration">00:25</span>
@@ -549,7 +549,7 @@
           </div>
         </article>
 
-        <article class="poster-card reveal" data-category="Event" data-title="Valentine Menfess" data-desc="A year event where we sent a secret message to someone. A 5-poster series in 9:16 — use the arrows to browse." data-series="Poster sample/Valentine Menfess 1.jpeg,Poster sample/Valentine Menfess 2.jpeg,Poster sample/Valentine Menfess 3.jpeg,Poster sample/Valentine Menfess 4.jpeg,Poster sample/Valentine Menfess 5.jpeg">
+        <article class="poster-card reveal" data-category="Event,Trend" data-title="Valentine Menfess" data-desc="A year event where we sent a secret message to someone. A 5-poster series in 9:16 — use the arrows to browse." data-series="Poster sample/Valentine Menfess 1.jpeg,Poster sample/Valentine Menfess 2.jpeg,Poster sample/Valentine Menfess 3.jpeg,Poster sample/Valentine Menfess 4.jpeg,Poster sample/Valentine Menfess 5.jpeg">
           <div class="poster poster-3">
             <img src="Poster sample/Menfess.jpeg">
             <div class="poster-bottom">
@@ -682,7 +682,7 @@
           </div>
         </article>
 
-        <article class="poster-card reveal" data-category="Event" data-title="Ramadhan Donation" data-desc="A promotion poster for donation takjil at school campaign">
+        <article class="poster-card reveal" data-category="Event,Promote" data-title="Ramadhan Donation" data-desc="A promotion poster for donation takjil at school campaign">
           <div class="poster poster-17">
             <img src="Poster sample/Invitation.jpeg">
             <div class="poster-bottom">
@@ -723,10 +723,10 @@
             <div class="contact-icon icon-pink">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             </div>
-            <div><h4>Response Time</h4><p>Within 24 hours</p></div>
+            <div><h4>Response Time</h4><p>08.00 AM to 05.00 PM</p></div>
           </div>
         </div>
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
           <input type="hidden" name="access_key" value="d5e52652-654f-4f84-bbe8-e436a5331526">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
@@ -748,6 +748,16 @@
           <div class="form-group">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label>Attach reference (optional)</label>
+            <div class="drop-zone" id="dropZone" tabindex="0" role="button" aria-label="Attach a file">
+              <input type="file" id="fileInput" name="attachment" multiple hidden>
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+              <p class="drop-text">Drag &amp; drop files here, or <span>browse</span></p>
+              <p class="drop-hint">Video, photo or document &middot; up to 25MB</p>
+              <ul class="file-list" id="fileList"></ul>
+            </div>
           </div>
           <button type="submit" class="btn btn-primary btn-full">Send Message</button>
         </form>
@@ -771,8 +781,8 @@
 
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2026 Muhammad Fadhilah — Video Editor &amp; Poster Designer</p>
-      <p>Built with passion, pixels &amp; patience.</p>
+      <p>&copy; 2026 Faxxerrowt</p>
+      <p>Beep beep</p>
     </div>
   </footer>
 
