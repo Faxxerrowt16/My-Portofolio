@@ -251,8 +251,20 @@ button { font-family: var(--font);
 }
 .hero-art img {
   display: block; width: 100%; height: auto;
-  filter: saturate(1.5) contrast(1.15) brightness(1.03);
+  filter: saturate(1.6) contrast(1.22) brightness(1.05);
   transition: transform 0.4s ease;
+}
+/* comic duotone wash in the site gradient — clipped to the character */
+.hero-art::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(120deg, #4d8bff 0%, #a06bff 52%, #2fbf9b 100%);
+  mix-blend-mode: color;
+  -webkit-mask-image: url("Karakter element.png");
+  mask-image: url("Karakter element.png");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 /* halftone dot screen — comic print effect, clipped to the character */
 .hero-art::after {
