@@ -20,6 +20,7 @@
   var posterStage = document.getElementById('posterStage');
   var posterModalTitle = document.getElementById('posterModalTitle');
   var posterModalDesc = document.getElementById('posterModalDesc');
+  var posterModalContent = posterModal ? posterModal.querySelector('.modal-content') : null;
 
   var lastFocused = null;
 
@@ -165,6 +166,7 @@
     if (content) content.style.width = (w + 6) + 'px'; /* +6 for the 3px borders */
   }
   function openPosterModal(card) {
+    if (posterModalContent) posterModalContent.classList.remove('doc-modal');
     var series = card.getAttribute('data-series');
     if (series && series.trim()) {
       showCarousel(card, series.split(',').map(function (s) { return s.trim(); }));
@@ -176,6 +178,25 @@
     }
     posterModalTitle.textContent = card.getAttribute('data-title') || 'Poster';
     posterModalDesc.textContent = card.getAttribute('data-desc') || '';
+    openModal(posterModal);
+  }
+
+  /* documentation photos reuse the poster lightbox, fitted to landscape photos */
+  function openDocModal(card) {
+    hideCarousel();
+    posterStage.innerHTML = '';
+    var img = card.querySelector('img');
+    if (img) {
+      var full = document.createElement('img');
+      full.className = 'doc-img';
+      full.src = img.currentSrc || img.src;
+      full.alt = img.alt || 'Documentation photo';
+      posterStage.appendChild(full);
+    }
+    var cap = card.querySelector('figcaption');
+    posterModalTitle.textContent = cap ? cap.textContent : 'Documentation';
+    posterModalDesc.textContent = '';
+    if (posterModalContent) posterModalContent.classList.add('doc-modal');
     openModal(posterModal);
   }
 
@@ -301,6 +322,19 @@
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         openPosterModal(card);
+      }
+    });
+  });
+
+  /* doc cards (click + keyboard) */
+  document.querySelectorAll('.doc-card').forEach(function (card) {
+    card.setAttribute('role', 'button');
+    card.setAttribute('tabindex', '0');
+    card.addEventListener('click', function () { openDocModal(card); });
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openDocModal(card);
       }
     });
   });
